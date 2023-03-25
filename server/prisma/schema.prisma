@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model ShortUrl {
+  //uuid
+  id String @id @default(uuid()) @db.Uuid
+
+  /// The original URL
+  url String @db.Citext
+
+  /// The slug for the shortened URL, e.g., https://url-shortener.com/<slug>
+  slug String @unique
+
+  //createdAt time
+  createdAt DateTime @default(now())
+
+  @@index([slug, url])
+  @@map("url")
+  //unique on slug and url -- assuming 1-1 and not 1-many for url -> slug(s)
+  @@unique([slug, url])
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
