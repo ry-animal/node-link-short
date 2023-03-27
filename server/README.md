@@ -1,4 +1,3 @@
-# Supermojo Interview
 
 ## Requirements
 
