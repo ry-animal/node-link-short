@@ -2,7 +2,7 @@ repo_name: ry-animal/node-link-short
 report_id: c8798dd6853a57204be09b4f71893dde
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:14:51+00:00'
+timestamp: '2024-02-29T18:15:16+00:00'
 requested_by: ry-animal
 provider: github
 branch: main
@@ -187,7 +187,7 @@ tools:
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-25 00:37:33.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.8.1
   license: MIT
@@ -201,7 +201,7 @@ tools:
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-03-25 00:37:33.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 6.3.3
   license: MIT
